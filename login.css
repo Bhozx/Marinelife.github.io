@@ -1,0 +1,191 @@
+
+* {
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* background */
+body{
+    background-image: linear-gradient(rgba(0, 8, 37, 0.897),rgba(4,9,30,0.7)), url(images/regbg1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+
+/* Start of Registration Form */
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 15px 0px 15px 0px;
+}
+.container1{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 0px 30px 50px ;
+    border-radius: 0px 50px 0px 50px;
+    border-style:groove;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.63);
+}
+.container div{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container .title{
+    background: rgb(28, 99, 104);
+    font-size: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-radius: 0px 20px 0px;
+    box-shadow: 10px 10px 10px 0px rgba(49, 117, 124, 0.582)
+}
+
+form .user-info .input-box{
+    margin: 30px 0 12px 0;
+        
+}
+
+.user-info .inputbox{
+    color: aqua;
+}
+.user-info .input-box input{
+    height: 50px;
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-color: black ;
+    border-right-color:rgb(32, 85, 105);
+    border-bottom-color: rgb(32, 85, 105);
+    transition: all 0.10s ease ;
+    border-color: rgb(32, 85, 105);
+}
+
+/*input box after input effects*/
+.user-info .input-box input:hover,
+.user-info .input-box input:valid{
+    border-color: rgb(81, 196, 224);
+}
+
+/*gender and terms button*/
+form .user-gender .gender-info{
+        font-size: 20px;
+        font-weight: 500;
+}
+form .user-gender .option{
+    display: flex;
+    width: 100%;
+
+    margin: 14px 0;
+    justify-content: space-between;
+}
+.user-gender .option label{
+    display: flex;
+    align-items: center;
+}
+.user-gender .option .btn{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 70%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    cursor: pointer;
+}
+#btn1:checked~.option label .one,
+#btn2:checked~.option label .two{
+    border-color: rgb(32, 85, 105);
+    background-color: rgb(106, 127, 133);
+}
+form input[type="radio"]{
+    display: none;
+}
+
+.user-gender .option .gender{
+    margin-right: 5px;
+}
+
+form input[type="checkbox"]{
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+.eye i{
+    margin-left: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.eye{
+    float: right;
+}
+.eye i::before{
+    color: black; 
+
+}
+.eye i::after{
+    color: cadetblue;
+}
+
+/*register button*/
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500px;
+    background: rgb(28, 99, 104);
+    border-radius: 5px;
+    cursor: pointer;
+}
+form .button input:hover{
+    background: rgb(77, 165, 187);
+}
+.Login{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+/*Responsiveness(not yet finished)*/
+@media(max-width: 650px){
+    .container{
+        max-width: 700px;
+        width: 100%;
+        padding-bottom: 500px;
+        padding-top: 500px;
+    }
+    .container .title{
+        font-size: 20px;
+    }
+    .container form .user-info{
+        max-height: 400px;
+        overflow-y: scroll;
+    }
+    @media(max-width: 300px){
+        .container .title{
+             font-size: 15px;
+        }  
+    }  
+}
+/* End of Registration Form */
+
+

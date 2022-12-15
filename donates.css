@@ -1,0 +1,304 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #fff;
+    
+}
+/* back to top button */
+#toTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: #fff groove 1px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #toTop:hover {
+    background-color: rgb(31, 90, 114);
+  }
+
+  #toTop i{
+      font-size: 30px;
+  }
+
+/* End of back to top button */
+
+
+/*Start of Navigation Bar and Banner Section*/
+
+.title{
+    height:90vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/kathycalvin.webp);
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 0px 0px 100px 100px;
+}
+.header{
+    height: 80px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
+.header{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0;
+    z-index: 9;
+}
+.innerheader h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: 24px;
+}
+.innerheader ul li{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+.innerheader{
+    width:  100%;
+    height: 100%;
+    display: block;
+    background-color: transparent;
+}
+
+/* logo  */
+.logo{
+    height: 100%;
+    display: table;
+    float: left;
+    margin: 0 20px;
+}
+.logo h1{
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 900;
+}
+.logo h1 span{
+    font-weight: 100;
+    color: skyblue;
+}
+/* navigation bar */
+nav{
+    position: sticky;
+    top: 0;
+    
+}
+.navigation{
+    height:100%;
+    float:right;
+    margin: 0 20px;
+    display: table;
+    
+}
+.navigation li{
+    height: 100%;
+    display: table-cell;
+    padding: 0 20px;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+.navigation li a{
+    display: table-cell;
+    height: 100%;
+    color: white;
+    font-weight:700;
+}
+.navigation li a:hover{
+    color: skyblue;
+}
+.contact-btn{
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 10px 15px;
+    background: #fff;
+    border-radius: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.contact-btn:hover{
+    box-shadow: 0 0 20px 0px rgb(104, 193, 209);
+}
+.innertextbox1 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.innertextbox1 p {
+    color:white;
+    max-width: 70%;
+    padding: 300px 0px 300px 0px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-style: italic;    
+}
+
+/*Content Section*/
+
+.slider-container{
+    height: 80vh;
+    width: auto;
+    margin-top: 100px;
+    position: relative;
+}
+.slider-container h1{
+    text-align: center;
+    font-weight: 800;
+    font-size: 50px;
+}
+.txt-info {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+
+.services-container{
+    width: 100%;  
+    margin-top: 200px;
+    
+}
+.mission{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/donatepic3.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 150px;
+}
+.mission h1{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+.mission p{
+    color: #fff;
+    font-size: 25px;
+    text-align:left;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+/* Donation Form */
+.form-container{
+    min-height: 150vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.col-1{
+    flex-basis: 50%;
+    flex-grow: 1;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(17, 17, 17, 0.8)),url(images/donatepic.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: inherit;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.col-2{
+    flex-basis: 50%;
+    flex-grow: 1;
+    padding: 50px 100px;
+}
+.col-2 h1{
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: -80px;
+    font-family: sans-serif;
+}
+form{
+    width: 400px;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+}
+label{
+    display: block;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px 5px rgba(0,0,0,0.5);
+    display:flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #999;
+    cursor: pointer;
+}
+label span{
+    flex: 1;
+    margin-left: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    color:#333;
+}
+input[type="radio"]:checked + span{
+    color: skyblue;
+}
+input[type="text"],input[type="email"]{
+    width: 100%;
+    background: transparent;
+    padding: 7px 10px;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 4px;
+    margin: 12px 0;
+}
+form p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+form button{
+    background: skyblue;
+    color: #fff;
+    font-size: 18px;
+    padding: 12px 50px;
+    margin: 20px 0;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: 0.5s;
+}
+form button:hover{
+    background-color: rgb(15, 65, 85);
+}
+

@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;   
+   }
+   
+   body{
+    background-image: linear-gradient(rgba(0, 8, 37, 0.897),rgba(4,9,30,0.7)), url(images/francesco-ungaro-hqAGgNsMpEY-unsplash.jpg);
+       background-size: cover;
+       background-position: center;
+       position: relative;
+   }
+
+/*Start of Summary form */
+   .container{
+       display: flex;
+       height: 100vh;
+       justify-content: center;
+       align-items: center;
+       padding: 10px;
+       margin: 10px 30px 0px 0px;
+   }
+   .container1{
+       max-width: 700px;
+       height: 330px;
+       width: 100%;
+       background: #fff;
+       padding: 0px 30px 50px ;
+       border-radius: 30px;
+       border-style:groove;
+       box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.63);
+   }
+   .container .title{
+    background: rgb(28, 99, 104);
+    font-size: 15px;
+    font-family:sans-serif;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 10px 10px 10px 0px rgba(49, 117, 124, 0.582)
+}
+   .container div{
+       font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+
+   .container p{
+       margin-top: 40px;
+       text-align: center;
+       font-size: large;
+   }
+   .container h4{
+       margin-top: 10px;
+       text-align: center;
+       font-size: x-large;
+       font-style: italic;
+       font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+/*End of Summary form */
+
+  
+/*Back to Home Button*/
+form .button{
+    height: 45px;
+    margin: 50px 0;
+    margin-left: 0px;
+}
+form .button input{
+    height: 100%;
+    width: 50%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500px;
+    background: rgb(28, 99, 104);
+    border-radius: 5px;
+    cursor: pointer;
+}
+form .button input:hover{
+    background: rgb(77, 165, 187);
+}

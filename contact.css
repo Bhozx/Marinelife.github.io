@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+body{
+    background-image: linear-gradient(rgba(13, 21, 53, 0.897),rgba(19, 30, 65, 0.7)), url(images/francesco-ungaro-hqAGgNsMpEY-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* Start of Nav Bar and Banner Section */
+.logo{
+    height: 100%;
+    display: table;
+    float: left;
+    margin: 0 20px;
+    font-size: 20px;
+}
+.logo h1{
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 900;
+}
+.logo h1 span{
+    font-weight: 100;
+    color: skyblue;
+}
+/* navigation bar */
+
+.navigation{
+    height:100%;
+    float:right;
+    margin: 0 20px;
+    display: table;
+}
+.navigation li{
+    height: 100%;
+    display: table-cell;
+    padding: 0 20px;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+}
+.navigation li a{
+    display: table-cell;
+    height: 100%;
+    color: white;
+    font-weight:700;
+}
+.navigation li a:hover{
+    color: skyblue;
+}
+
+.contact-btn{
+        margin-top: 20px;
+        font-size: 18px;
+        padding: 10px 15px;
+        background: #fff;
+        border-radius: 30px;
+        font-weight: bolder;
+        cursor: pointer;
+}
+.contact-btn:hover{
+    box-shadow: 0 0 20px 0px rgb(104, 193, 209);
+}
+.header{
+    height: 80px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
+.header{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0;
+    z-index: 9;
+}
+.innerheader{
+    width:  100%;
+    height: 100%;
+    display: block;
+    background-color: transparent;
+
+}
+/* End of Nav Bar */
+
+
+/*Start of Message Form*/
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 50px 20px 0px 40px;
+}
+.container1{
+    max-width: 700px;
+    width: 100%;
+    backdrop-filter: blur(50px);
+    padding: 0px 30px 50px ;
+    border-radius: 20px;
+    
+}
+.container div{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container .title{
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+#msg-input textarea{
+    height: 150px;
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-color: black ;
+    border-right-color:rgb(32, 85, 105);
+    border-bottom-color: rgb(32, 85, 105);
+    transition: all 0.10s ease ;
+    border-color: rgb(32, 85, 105);
+}
+.input-box .information{
+    color: #fff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+form .user-info .input-box{
+    margin: 40px 0 12px 0;
+    margin-top: 20px;
+
+}
+
+.user-info .inputbox{
+    color: aqua;
+}
+.user-info .input-box input{
+    height: 50px;
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-color: black ;
+    border-right-color:rgb(32, 85, 105);
+    border-bottom-color: rgb(32, 85, 105);
+    transition: all 0.10s ease ;
+    border-color: rgb(32, 85, 105);
+}
+
+/*input box after Valid input effects*/
+.user-info .input-box input:hover,
+.user-info .input-box input:valid{
+    border-color: rgb(81, 196, 224);
+}
+
+.user-info .input-box textarea::after{
+    border-color:  rgb(81, 196, 224);
+}
+
+
+/*Send button*/
+form .button{
+    height: 45px;
+    margin: 35px 0;
+    margin-left: 220px;
+}
+form .button input{
+    height: 100%;
+    width: 50%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500px;
+    background: rgb(28, 99, 104);
+    border-radius: 5px;
+    cursor: pointer;
+}
+form .button input:hover{
+    background: rgb(77, 165, 187);
+}
+/*End of Message Form*/
+
+
+
+/* footer Section*/
+.foot-container{
+    max-width: 100%;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+.footer{
+    background-color: black;
+    padding: 40px 0;
+    margin-top: none;
+    border-radius: 0px 250px 0px 0px;
+}
+.footer-col{
+    width: 16%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 20px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: skyblue;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: cyan;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 0;
+	color: skyblue;
+	transition: all 0.5s ease;
+}
+.footer-col .social a:hover{
+	color:aqua;
+	background-color: #fff;
+}
+
+footer hr{
+    width: 90%;
+    margin: auto;
+    border-style: solid;
+    color: #504e4e;
+}
+
+footer .foot-note{
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+

@@ -1,0 +1,350 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* back to top button */
+#toTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: #fff groove 1px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #toTop:hover {
+    background-color: rgb(31, 90, 114);
+  }
+
+  #toTop i{
+      font-size: 30px;
+  }
+
+
+  
+
+/* Start of Navigation bar and banner section */
+body{
+    background-color: white;
+}
+.title{
+    height:80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(18, 55, 10, 0.6), rgba(18, 55, 10, 0.6)), url(images/olfubuilding.jpg);
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 0px 0px 100px 100px;
+}
+.header{
+    height: 80px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
+.header{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0;
+    z-index: 9;
+}
+.innerheader{
+    width:  100%;
+    height: 100%;
+    display: block;
+    background-color: transparent;
+}
+/* logo  */
+.logo{
+    height: 100%;
+    display: table;
+    float: left;
+    margin: 0 20px;
+}
+.logo h1{
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 900;
+}
+.logo h1 span{
+    font-weight: 100;
+    color: skyblue;
+}
+/* navigation bar */
+
+.navigation{
+    height:100%;
+    float:right;
+    margin: 0 20px;
+    display: table;
+}
+.navigation li{
+    height: 100%;
+    display: table-cell;
+    padding: 0 20px;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+}
+.navigation li a{
+    display: table-cell;
+    height: 100%;
+    color: white;
+    font-weight:700;
+}
+.navigation li a:hover{
+    color: skyblue;
+}
+.contact-btn{
+        margin-top: 20px;
+        font-size: 18px;
+        padding: 10px 15px;
+        background: #fff;
+        border-radius: 30px;
+        font-weight: bolder;
+        cursor: pointer;
+}
+.contact-btn:hover{
+    box-shadow: 0 0 20px 0px rgb(104, 193, 209);
+}
+
+.innertextbox1 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.innertextbox1 h1{
+    color: white;
+    width: 100%;
+    font-size: 100px;
+    padding-top: 300px;
+}
+/* Start of Navigation bar and banner section */
+
+/* Start of Content Section*/
+.school-title{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight:900;
+
+}
+.content{
+    width: 50%;
+    height: 100%;
+    margin: 10% 25% 10% 25%;
+}
+.school{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.school img{
+    width: 200px;
+    height: auto;
+}
+.mission{
+    margin: 100px auto;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/action_banner.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 150px 0;
+
+}
+.mission h1{
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.mission p{
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+}
+.uni-info{
+    padding: 5% 10% 5% 10%;
+    font-size: 20px;
+}
+
+.member{
+    margin-top: 10%;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    box-sizing:border-box;
+    border: 1px transparent solid;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgb(255, 255, 242);
+    box-shadow: rgb(175, 175, 175) 1px 1px 1px 1px;
+}
+.member img{
+    width: 120px;
+    height: auto;
+    display: block;
+    border: 1px transparent solid;
+    border-radius: 15px;
+}
+.text{
+    padding: 3% 10% 5% 20%;
+}
+.text p{
+    font-size: 20px;
+}
+.text p span{
+    font-weight: bold;
+}
+/* End of Content Section*/
+ 
+/* Register*/
+.reg{
+    margin: 100px auto;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/david-clode-1zglnBe3QJw-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 0;
+    border-radius: 0px 250px 0px 0px;
+}
+.reg h1{
+    color: #fff;
+    margin-bottom: 40px;
+}
+.reg-text{
+    color: #ffffff;
+    font-style: italic;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    margin-top: 30px;
+    padding: 12px 34px;
+    font-size: 20px;
+    font-weight: 500px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.btn:hover{
+    border: 2px solid #fff;
+    background: rgb(34, 137, 141);
+    transition: 1s;
+}
+/* End of Register*/
+
+
+/* footer Section*/
+.foot-container{
+    max-width: 100%;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+.footer{
+    background-color: black;
+    padding: 40px 0;
+    margin-top: none;
+}
+.footer-col{
+    width: 16%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 20px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: skyblue;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: cyan;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 0;
+	color: skyblue;
+	transition: all 0.5s ease;
+}
+.footer-col .social a:hover{
+	color:aqua;
+	background-color: #fff;
+}
+
+footer hr{
+    width: 90%;
+    margin: auto;
+    border-style: solid;
+    color: #504e4e;
+}
+
+footer .foot-note{
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
